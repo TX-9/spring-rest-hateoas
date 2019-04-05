@@ -16,8 +16,8 @@ public class LoadDatabase {
 	@Bean
 	CommandLineRunner initDatabase(EmployeeRepository repository) {
 		return args -> {
-			log.info("Preloading " + repository.save(new Employee("Jacob Lee", "Full Stack Developer")));
-			log.info("Preloading " + repository.save(new Employee("Angela Han", "Accountant")));
+			log.info("Preloading " + repository.save(new Employee("Jacob", "Lee", "Full Stack Developer")));
+			log.info("Preloading " + repository.save(new Employee("Angela", "Han", "Accountant")));
 		};
 	}
 }
